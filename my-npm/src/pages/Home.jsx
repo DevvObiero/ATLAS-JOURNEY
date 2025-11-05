@@ -48,7 +48,7 @@ function Home() {
   />
   
   {/* CircularText positioned at bottom left */}
-  <div className="absolute -bottom-10 rounded-4xl -left-6 z-10">
+  <div className="absolute -bottom-12 rounded-4xl -left-9 z-10">
     <CircularText
       text="BREATHE * REST * CONNECT *  "
       onHover="speedUp"
