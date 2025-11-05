@@ -1,4 +1,4 @@
-import React from 'react';
+import CircularText from "../components/CircularText";
 
 function Home() {
   return (
@@ -35,9 +35,11 @@ function Home() {
       className="px-5 py-3 bg-[#E8C5A8] text-white font-medium rounded-md hover:bg-[#d7b195] transition"
     >
       Listen to the Podcast
-    </button>
+          </button>
+ 
   </div>
 </div>
+
       {/* Right Side Image */}
       <div className="w-[510px] h-[520px] rounded-xl overflow-hidden shadow-lg">
         <img
