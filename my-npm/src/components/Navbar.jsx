@@ -13,11 +13,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between px-8 py-4 bg-white shadow">
+    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-4 bg-white shadow">
       {/* Logo */}
-   <div className="arisev text-xl font-semibold" style={{ color: "white" }}>
-  YourLogo
-</div>
+      <div className="arisev text-xl font-semibold" style={{ color: "#E8C5A8" }}>
+        YourLogo
+      </div>
 
       {/* Nav Links */}
       <ul className="flex gap-8 text-sm font-medium">
@@ -29,10 +29,8 @@ const Navbar = () => {
               style={{ color: "#E8C5A8" }}
             >
               {item}
-
-              {/* White underline that only appears on hover */}
               <span
-                className="absolute left-0 bottom-0 w-full h-[2px] bg-white scale-x-0 transition-transform duration-300 origin-left hover:scale-x-100"
+                className="pointer-events-none absolute left-0 bottom-0 w-full h-[2px] bg-[#E8C5A8] scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 hover:scale-x-100"
               ></span>
             </a>
           </li>

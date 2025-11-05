@@ -5,7 +5,7 @@ function Home() {
     <section className="min-h-screen flex items-center justify-between px-12 py-20">
       {/* Left Side Text */}
     <div className="max-w-lg space-y-6">
-<h1 className="manrope text-4xl font-bold leading-tight" style={{ color: "#E8C5A8" }}>
+<h1 className="manrope text-5xl font-bold leading-tight" style={{ color: "#E8C5A8" }}>
   The Fourth Trimester Doesn't Have to Break You
 </h1>
 
