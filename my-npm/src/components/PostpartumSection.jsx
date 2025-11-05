@@ -1,30 +1,39 @@
 import { useState, useEffect } from 'react';
 
+import { useInView } from 'react-intersection-observer'; // 1. Import the hook
+
 const Counter = ({ end, duration = 2000, suffix = "" }) => {
   const [count, setCount] = useState(0);
+  
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   useEffect(() => {
-    let startTime;
-    let animationFrame;
+    if (inView) {
+      let startTime;
+      let animationFrame;
 
-    const animate = (currentTime) => {
-      if (!startTime) startTime = currentTime;
-      const progress = (currentTime - startTime) / duration;
+      const animate = (currentTime) => {
+        if (!startTime) startTime = currentTime;
+        const progress = (currentTime - startTime) / duration;
 
-      if (progress < 1) {
-        setCount(Math.floor(end * progress));
-        animationFrame = requestAnimationFrame(animate);
-      } else {
-        setCount(end);
-      }
-    };
+        if (progress < 1) {
+          setCount(Math.floor(end * progress));
+          animationFrame = requestAnimationFrame(animate);
+        } else {
+          setCount(end);
+        }
+      };
 
-    animationFrame = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(animationFrame);
-  }, [end, duration]);
+      animationFrame = requestAnimationFrame(animate);
+      return () => cancelAnimationFrame(animationFrame);
+    }
+  }, [inView, end, duration]);
 
   return (
-    <div className="text-center">
+    <div ref={ref} className="text-center">
       <div className="text-6xl font-bold text-[#E8C5A8] mb-2">
         {count}{suffix}
       </div>
