@@ -5,6 +5,11 @@ import ResourcesSection from "./components/ResourcesSection";
 import PostpartumSection from './components/PostpartumSection';
 import HowWeAreDifferent from "./components/HowWeAreDifferent;";
 import Gallery from "./components/Gallery";
+import Testimonials from "./components/Testimonials";
+import CTA from "./components/CTA";
+import Footer from "./components/Footer";
+
+
 function App() {
 
   return (
@@ -14,7 +19,10 @@ function App() {
       <ResourcesSection />
       <PostpartumSection />
       <HowWeAreDifferent />
-<Gallery />
+      <Gallery />
+      <Testimonials />
+      <CTA />
+      <Footer />
     </>
   )
 }

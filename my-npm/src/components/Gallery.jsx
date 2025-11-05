@@ -43,9 +43,9 @@ const Gallery = () => {
           - 'md:w-1/2' makes this take up the other half of the width.
           - The original div with height and position is kept as it's needed for CardSwap.
         */}
-        <div className="md:w-1/2 w-full" style={{ height: '600px', position: 'relative' }}>
+        <div className="md:w-1/2 w-full" style={{ height: '500px', position: 'relative' }}>
           <CardSwap
-            cardDistance={60}
+            cardDistance={90}
             verticalDistance={70}
             delay={5000}
             pauseOnHover={false}
