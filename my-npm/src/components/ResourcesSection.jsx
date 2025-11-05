@@ -58,7 +58,7 @@ export default function ResourcesSection() {
         {/* Full Width Cards */}
         <div className="space-y-6">
           {/* Podcast Card */}
-          <div className="  rounded-xl p-8 text-white shadow-md hover:shadow-lg transition">
+          <div className="  rounded-xl p-8 text-white border-2 shadow-md hover:shadow-lg transition">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div className="space-y-3 flex-1">
                 <div className="flex items-center gap-3">
@@ -82,9 +82,9 @@ export default function ResourcesSection() {
               <div className="space-y-3 flex-1">
                 <div className="flex items-center gap-3">
                   <BookOpen className="w-6 h-6 text-[#E8C5A8]" />
-                  <h3 className="text-2xl font-bold text-gray-900">Evidence-Based Guidance You Can Trust</h3>
+                  <h3 className="text-2xl font-bold text-gray-200">Evidence-Based Guidance You Can Trust</h3>
                 </div>
-                <p className="text-gray-600">
+                <p className="text-gray-200">
                   Every piece grounded in research, vetted by experts, filtered through lived experience. 
                   We cut through the noise to give you what actually works.
                 </p>
