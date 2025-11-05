@@ -40,14 +40,23 @@ function Home() {
   </div>
 </div>
 
-      {/* Right Side Image */}
-      <div className="w-[510px] h-[520px] rounded-xl overflow-hidden shadow-lg">
-        <img
-          src="./img1.jpg"
-          alt="Postpartum support"
-          className="w-full h-full object-cover"
-        />
-      </div>
+  <div className="w-[510px] h-[520px] rounded-xl shadow-lg relative">
+  <img
+    src="./img1.jpg"
+    alt="Postpartum support"
+    className="w-full h-full object-cover rounded-4xl"
+  />
+  
+  {/* CircularText positioned at bottom left */}
+  <div className="absolute -bottom-10 rounded-4xl -left-6 z-10">
+    <CircularText
+      text="BREATHE * REST * CONNECT *  "
+      onHover="speedUp"
+      spinDuration={20}
+      className="custom-class"
+    />
+  </div>
+</div>
     </section>
   );
 }

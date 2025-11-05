@@ -58,7 +58,7 @@ export default function ResourcesSection() {
         {/* Full Width Cards */}
         <div className="space-y-6">
           {/* Podcast Card */}
-          <div className="bg-gradient-to-r from-[#E8C5A8] to-[#d7b195] rounded-xl p-8 text-white shadow-md hover:shadow-lg transition">
+          <div className="  rounded-xl p-8 text-white shadow-md hover:shadow-lg transition">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div className="space-y-3 flex-1">
                 <div className="flex items-center gap-3">

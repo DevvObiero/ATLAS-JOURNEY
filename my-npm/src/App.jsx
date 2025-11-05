@@ -1,4 +1,4 @@
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import './App.css'
 import Navbar from "./components/Navbar";
 import ResourcesSection from "./components/ResourcesSection";
