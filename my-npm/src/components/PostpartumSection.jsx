@@ -73,14 +73,14 @@ function PostpartumSection() {
 
         {/* Statistics Counters */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-          <div className="text-center p-6 rounded-lg">
+          <div className="text-center p-6 bg-[#1a2930] rounded-lg">
             <Counter end={10} suffix="%" duration={2000} />
             <p className="text-gray-400 mt-4">
               Fathers experience postpartum depression
             </p>
           </div>
 
-          <div className="text-center p-6  rounded-lg">
+          <div className="text-center p-6 bg-[#1a2930] rounded-lg">
             <Counter end={1} suffix="%" duration={2000} />
             <p className="text-gray-400 mt-4">
               Actually seek help

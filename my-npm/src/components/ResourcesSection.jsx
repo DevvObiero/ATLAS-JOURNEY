@@ -4,7 +4,7 @@ import { ArrowRight, Users, Heart, Mic, BookOpen } from 'lucide-react';
 
 export default function ResourcesSection() {
   return (
-    <div className="min-h-screen bg-[#051A23]  py-20 px-6">
+    <div className="min-h-screen -mt-8 bg-[#051A23]  py-20 px-6">
       <div className="max-w-5xl mx-auto space-y-16">
         {/* Header */}
         <div className="text-center space-y-4">
@@ -64,7 +64,7 @@ export default function ResourcesSection() {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div className="space-y-3 flex-1">
                 <div className="flex items-center gap-3">
-                  <Mic className="w-6 h-6" />
+                  <Mic className="w-6 h-6 text-[#E8C5A8]" />
                   <h3 className="text-2xl font-bold">Honest Conversations That Matter</h3>
                 </div>
                 <p className="text-white text-opacity-95">
@@ -72,14 +72,14 @@ export default function ResourcesSection() {
                   to relationship dynamics and identity shifts. No fluff, no judgment.
                 </p>
               </div>
-              <button className="px-6 py-3 bg-white text-[#E8C5A8] font-medium rounded-md hover:bg-opacity-90 transition whitespace-nowrap">
+               <button className="px-6 py-3 border-2 border-[#E8C5A8] text-[#E8C5A8] font-medium rounded-md hover:bg-[#E8C5A8] hover:text-white transition whitespace-nowrap">
                 Listen Now
               </button>
             </div>
           </div>
 
           {/* Blog Card */}
-          <div className="bg-white border-2 border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition">
+          <div className="bg-[#051A23] border-2 border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div className="space-y-3 flex-1">
                 <div className="flex items-center gap-3">

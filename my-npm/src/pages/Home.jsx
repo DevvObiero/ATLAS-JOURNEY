@@ -2,7 +2,7 @@ import CircularText from "../components/CircularText";
 
 function Home() {
   return (
-    <section className="min-h-screen  body flex items-center justify-between px-12 py-20">
+    <section className="min-h-screen  body flex items-center justify-between px-12 py-20" >
       {/* Left Side Text */}
     <div className="max-w-lg space-y-6">
 <h1 className="manrope text-5xl font-bold leading-tight" style={{ color: "#E8C5A8" }}>
