@@ -1,24 +1,24 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const links = [
-    "Home",
-    "About",
-    "For Partners",
-    "For Moms",
-    "Blog",
-    "Podcast",
-    "Resources",
-    "Contact",
+    { label: "Home", path: "/" },
+    { label: "About", path: "/about" },
+    { label: "For Partners", path: "/for-partners" },
+    { label: "For Moms", path: "/for-moms" },
+    { label: "Blog", path: "/blog" },
+    { label: "Podcast", path: "/podcast" },
+    { label: "Resources", path: "/resources" },
+    { label: "Contact", path: "/contact" },
   ];
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -30,24 +30,22 @@ const Navbar = () => {
       }`}
     >
       {/* Logo */}
-      <div className="arisev text-3xl font-semibold" style={{ color: "#E8C5A8" }}>
+      <div className="text-3xl font-semibold" style={{ color: "#E8C5A8" }}>
         AJ
       </div>
 
       {/* Nav Links */}
       <ul className="flex gap-8 text-sm font-medium">
-        {links.map((item) => (
-          <li key={item}>
-            <a
-              href="#"
+        {links.map(({ label, path }) => (
+          <li key={label}>
+            <Link
+              to={path}
               className="relative pb-1 group"
               style={{ color: "#E8C5A8" }}
             >
-              {item}
-              <span
-                className="pointer-events-none absolute left-0 bottom-0 w-full h-[2px] bg-[#E8C5A8] scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"
-              />
-            </a>
+              {label}
+              <span className="pointer-events-none absolute left-0 bottom-0 w-full h-[2px] bg-[#E8C5A8] scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
+            </Link>
           </li>
         ))}
       </ul>
