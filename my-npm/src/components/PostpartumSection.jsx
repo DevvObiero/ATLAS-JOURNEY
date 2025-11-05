@@ -97,8 +97,8 @@ function PostpartumSection() {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <button className="px-8 py-4 bg-[#E8C5A8] text-white font-semibold text-lg rounded-md hover:bg-[#d7b195] transition shadow-lg">
-            Learn How We're Different
+          <button className="px-8 py-4 bg-[#d7b195] text-white font-semibold text-lg rounded-md hover:bg-[#1a2930] hover:border-[#d7b195] transition shadow-lg">
+            Explore Our Postpartum Support Resources
           </button>
         </div>
       </div>

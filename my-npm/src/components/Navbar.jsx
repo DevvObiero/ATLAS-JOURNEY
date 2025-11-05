@@ -30,8 +30,8 @@ const Navbar = () => {
       }`}
     >
       {/* Logo */}
-      <div className="arisev text-xl font-semibold" style={{ color: "#E8C5A8" }}>
-        YourLogo
+      <div className="arisev text-3xl font-semibold" style={{ color: "#E8C5A8" }}>
+        AJ
       </div>
 
       {/* Nav Links */}
