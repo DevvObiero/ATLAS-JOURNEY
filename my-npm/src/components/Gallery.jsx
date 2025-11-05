@@ -24,10 +24,10 @@ const Gallery = () => {
             className="text-4xl lg:text-5xl font-bold mb-4" 
             style={{ color: '#E8C5A8' }} // Your requested header color
           >
-            Honest Conversations That Matter
+          Navigating Postpartum, Together
           </h2>
           <p className="text-lg text-gray-300">
-            The Atlas Journey Podcast brings you real talk about postpartum 
+       The Atlas Journey Podcast brings you real talk about postpartum 
             life — from mental health and sleep deprivation to relationship 
             dynamics and identity shifts. No fluff, no judgment, 
             just the truth about what it's really like.
@@ -52,21 +52,21 @@ const Gallery = () => {
           >
             <Card>
               <img 
-                src="your-image-url-1.jpg" // <-- Remember to change this
+                src="https://images.pexels.com/photos/1741231/pexels-photo-1741231.jpeg" // <-- Remember to change this
                 alt="Couple listening to a podcast" 
                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }}
               />
             </Card>
             <Card>
               <img 
-                src="your-image-url-2.jpg" // <-- Remember to change this
+                src="https://babysittingagency.fkfbungoma.co.ke/assets/a-131_1761862132502_1762261801879-CcZj2CEn.jpg" // <-- Remember to change this
                 alt="Father holding a newborn baby" 
                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }}
               />
             </Card>
             <Card>
               <img 
-                src="your-image-url-3.jpg" // <-- Remember to change this
+                src="https://babysittingagency.fkfbungoma.co.ke/assets/a-133_1761862132500_1762261801877-FZj1YbnM.jpg" // <-- Remember to change this
                 alt="Two parents smiling" 
                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }}
               />
