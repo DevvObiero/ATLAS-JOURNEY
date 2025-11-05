@@ -9,16 +9,16 @@ function Home() {
   The Fourth Trimester Doesn't Have to Break You
 </h1>
 
-  <p className="text-gray-700 text-lg">
+  <p className="text-gray-400 text-lg">
     Real support for partners navigating postpartum — because no one should feel unprepared.
   </p>
 
-  <p className="text-gray-600">
+  <p className="text-gray-400">
     When Atlas arrived, we thought we were ready. We weren't. 
     Kevin watched Sammy struggle, feeling completely helpless.
   </p>
 
-  <p className="text-gray-600">
+  <p className="text-gray-400">
     Atlas Journey gives you real tools and honest conversations. 
     Don't just survive the fourth trimester — navigate it together.
   </p>
