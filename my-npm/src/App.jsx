@@ -3,6 +3,8 @@ import './App.css'
 import Navbar from "./components/Navbar";
 import ResourcesSection from "./components/ResourcesSection";
 import PostpartumSection from './components/PostpartumSection';
+import HowWeAreDifferent from "./components/HowWeAreDifferent;";
+
 function App() {
 
   return (
@@ -11,6 +13,7 @@ function App() {
       <Home />;
       <ResourcesSection />
       <PostpartumSection />
+      <HowWeAreDifferent />
 
     </>
   )
