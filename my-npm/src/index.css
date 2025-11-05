@@ -4,3 +4,14 @@
 .manrope {
   font-family: 'Manrope', sans-serif;
 }
+
+@font-face {
+  font-family: "Arisev";
+  src: url("/src/assets/fonts/ARISEV.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.arisev {
+  font-family: "Arisev", sans-serif;
+}

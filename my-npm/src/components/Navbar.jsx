@@ -15,9 +15,9 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-8 py-4 bg-white shadow">
       {/* Logo */}
-      <div className="text-xl font-semibold" style={{ color: "#E8C5A8" }}>
-        YourLogo
-      </div>
+   <div className="arisev text-xl font-semibold" style={{ color: "white" }}>
+  YourLogo
+</div>
 
       {/* Nav Links */}
       <ul className="flex gap-8 text-sm font-medium">
