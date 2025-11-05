@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-4 bg-white shadow">
+    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-4 bg-transparent shadow">
       {/* Logo */}
       <div className="arisev text-xl font-semibold" style={{ color: "#E8C5A8" }}>
         YourLogo

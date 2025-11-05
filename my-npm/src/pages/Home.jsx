@@ -2,7 +2,7 @@ import CircularText from "../components/CircularText";
 
 function Home() {
   return (
-    <section className="min-h-screen flex items-center justify-between px-12 py-20">
+    <section className="min-h-screen  body flex items-center justify-between px-12 py-20">
       {/* Left Side Text */}
     <div className="max-w-lg space-y-6">
 <h1 className="manrope text-5xl font-bold leading-tight" style={{ color: "#E8C5A8" }}>
@@ -26,13 +26,13 @@ function Home() {
   {/* Buttons */}
   <div className="flex gap-4 pt-4">
     <button
-      className="px-5 py-3 bg-white border border-[#E8C5A8] text-[#E8C5A8] font-medium rounded-md hover:bg-[#E8C5A8] hover:text-white transition"
+      className="px-5 py-3 bg-[#051A23] border border-[#E8C5A8] text-[#E8C5A8] font-medium rounded-md hover:bg-[#E8C5A8] hover:text-white transition"
     >
       Get the Free Newborn Checklist
     </button>
 
     <button
-      className="px-5 py-3 bg-[#E8C5A8] text-white font-medium rounded-md hover:bg-[#d7b195] transition"
+      className="px-5 py-3 bg-[#051A23] text-white font-medium rounded-md hover:bg-[#d7b195] transition"
     >
       Listen to the Podcast
           </button>

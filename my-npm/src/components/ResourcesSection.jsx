@@ -1,8 +1,10 @@
 import { ArrowRight, Users, Heart, Mic, BookOpen } from 'lucide-react';
 
+
+
 export default function ResourcesSection() {
   return (
-    <div className="min-h-screen   py-20 px-6">
+    <div className="min-h-screen bg-[#051A23]  py-20 px-6">
       <div className="max-w-5xl mx-auto space-y-16">
         {/* Header */}
         <div className="text-center space-y-4">
@@ -18,9 +20,9 @@ export default function ResourcesSection() {
         {/* Two Column Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {/* Partners Card */}
-          <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition space-y-4">
+          <div className="bg-[#051A23] rounded-xl p-8 shadow-sm hover:shadow-md transition space-y-4">
             <div className="w-12 h-12 rounded-full bg-[#E8C5A8] bg-opacity-20 flex items-center justify-center">
-              <Users className="w-6 h-6" style={{ color: "#E8C5A8" }} />
+              <Users className="w-6 h-6" style={{ color: "black" }} />
             </div>
             <h3 className="text-2xl font-bold text-gray-200">
               For Partners Who Want to Show Up
@@ -32,14 +34,14 @@ export default function ResourcesSection() {
             </p>
             <button className="flex items-center gap-2 text-[#E8C5A8] font-medium hover:gap-3 transition-all">
               Explore Partner Resources
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4" style={{ color: "white" }} />
             </button>
           </div>
 
           {/* Moms Card */}
-          <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition space-y-4">
+          <div className="bg-[#051A23] rounded-xl p-8 shadow-sm hover:shadow-md transition space-y-4">
             <div className="w-12 h-12 rounded-full bg-[#E8C5A8] bg-opacity-20 flex items-center justify-center">
-              <Heart className="w-6 h-6" style={{ color: "#E8C5A8" }} />
+              <Heart className="w-6 h-6" style={{ color: "black" }} />
             </div>
             <h3 className="text-2xl font-bold text-gray-200">
               For Moms Who Need Their Partner to Get It

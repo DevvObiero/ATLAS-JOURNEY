@@ -2,7 +2,7 @@ import Home from "./pages/Home";
 import './App.css'
 import Navbar from "./components/Navbar";
 import ResourcesSection from "./components/ResourcesSection";
-
+import PostpartumSection from './components/PostpartumSection';
 function App() {
 
   return (
@@ -10,6 +10,8 @@ function App() {
       <Navbar />
       <Home />;
       <ResourcesSection />
+      <PostpartumSection />
+
     </>
   )
 }
