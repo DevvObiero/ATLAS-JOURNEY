@@ -43,13 +43,13 @@ export default function App() {
         />
 
         {/* Standalone Pages */}
-        <Route path="/about" element={<About />} />
-        <Route path="/for-partners" element={<ForPartners />} />
-        <Route path="/for-moms" element={<ForMoms />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/podcast" element={<Podcast />} />
-        <Route path="/resources" element={<Resources />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/For-partners" element={<ForPartners />} />
+        <Route path="/For-moms" element={<ForMoms />} />
+        <Route path="/Blog" element={<Blog />} />
+        <Route path="/Podcast" element={<Podcast />} />
+        <Route path="/Resources" element={<Resources />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
 
       <Footer />
