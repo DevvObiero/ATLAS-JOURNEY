@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import ResourcesSection from "./components/ResourcesSection";
 import PostpartumSection from './components/PostpartumSection';
 import HowWeAreDifferent from "./components/HowWeAreDifferent;";
-
+import Gallery from "./components/Gallery";
 function App() {
 
   return (
@@ -14,7 +14,7 @@ function App() {
       <ResourcesSection />
       <PostpartumSection />
       <HowWeAreDifferent />
-
+<Gallery />
     </>
   )
 }

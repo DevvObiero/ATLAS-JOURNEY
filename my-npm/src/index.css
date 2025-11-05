@@ -20,4 +20,6 @@
 color: #E8C5A8;
 background-color: #051A23;
 }
-  
+  body {
+  overflow-x: hidden;
+}
