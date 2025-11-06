@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-// 1. Import NavLink instead of Link
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
     { label: "Home", path: "/" },
@@ -31,30 +31,27 @@ const Navbar = () => {
       }`}
     >
       {/* Logo */}
-      <div className="text-3xl arisev  font-semibold" style={{ color: "#E8C5A8" }}>
+      <div className="text-3xl arisev font-semibold" style={{ color: "#E8C5A8" }}>
         AJ
       </div>
 
-      {/* Nav Links */}
-      <ul className="flex gap-8 text-sm font-medium">
+      {/* Desktop Nav */}
+      <ul className="hidden md:flex gap-8 text-sm font-medium">
         {links.map(({ label, path }) => (
           <li key={label}>
-            {/* 2. Use NavLink instead of Link */}
             <NavLink
               to={path}
               className="relative pb-1 group"
               style={{ color: "#E8C5A8" }}
             >
-              {/* 3. Use a render function for the children */}
               {({ isActive }) => (
                 <>
                   {label}
                   <span
                     className={`
-                      pointer-events-none absolute left-0 bottom-0 w-full h-[2px] bg-[#E8C5A8] 
+                      pointer-events-none absolute left-0 bottom-0 w-full h-[2px] bg-[#E8C5A8]
                       transition-transform duration-300 origin-left 
                       group-hover:scale-x-100
-                      ${/* 4. Conditionally apply scale-x-100 if active */ ''}
                       ${isActive ? "scale-x-100" : "scale-x-0"}
                     `}
                   />
@@ -64,6 +61,34 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+
+      {/* Burger Button (Mobile/Tablet) */}
+      <button
+        className="md:hidden text-[#E8C5A8] text-2xl"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? "✕" : "☰"}
+      </button>
+
+      {/* Mobile Dropdown Menu */}
+      {menuOpen && (
+        <div className="absolute top-full left-0 w-full bg-black/80 backdrop-blur-md text-center py-6 md:hidden">
+          <ul className="flex flex-col gap-6 text-lg">
+            {links.map(({ label, path }) => (
+              <li key={label}>
+                <NavLink
+                  to={path}
+                  onClick={() => setMenuOpen(false)}
+                  className="block"
+                  style={{ color: "#E8C5A8" }}
+                >
+                  {label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
