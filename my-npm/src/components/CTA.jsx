@@ -46,7 +46,7 @@ const CTA = () => {
             className="px-8 py-3 rounded-full font-semibold bg-white hover:opacity-90 transition-opacity duration-300"
             style={{ color: '#607165' }} // Your button color used as text
           >
-            Join Our Newsletter
+            Contact Us
           </button>
 
         </div>
