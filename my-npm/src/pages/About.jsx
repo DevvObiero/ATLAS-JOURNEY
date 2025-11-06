@@ -146,7 +146,75 @@ const About = () => {
 />
       </div>
     </div>
+  <div className="bg-[#051B24] min-h-screen py-16 px-8">
+      <div className="max-w-6xl mx-auto">
+        {/* Main Section */}
+        <div className="mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#E8C5A8] mb-8">
+            Why We Do This
+          </h1>
+          
+          <p className="text-gray-200 text-lg mb-8 leading-relaxed">
+            Atlas Journey exists to equip partners with the tools, language, and strategies they 
+            need to show up for their families during the fourth trimester and beyond.
+          </p>
+          
+          <h2 className="text-2xl font-semibold text-white mb-6">We believe:</h2>
+          
+          <ul className="space-y-4 text-gray-200 text-lg">
+            <li className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <span>Partners need their own resources, not just "how to help mom" content</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <span>Postpartum is a family experience, and everyone deserves support</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <span>Relationships are the foundation — when couples thrive, families thrive</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <span>Honest conversation saves lives — literally. Postpartum mental health struggles are real, and talking about them reduces stigma and suffering</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <span>No one should navigate this season feeling alone, unprepared, or helpless</span>
+            </li>
+          </ul>
+        </div>
 
+        {/* Team Section */}
+        <div className="grid md:grid-cols-2 gap-12">
+          {/* Kevin */}
+          <div className="bg-[#0a2833] rounded-lg p-8">
+            <h3 className="text-3xl font-bold text-[#E8C5A8] mb-4">Kevin</h3>
+            <p className="text-gray-200 leading-relaxed">
+              Kevin is a husband, father to Atlas, and recovering "fix-it" guy learning to sit 
+              in discomfort without immediately solving it. His background in systems thinking and 
+              problem-solving made him great at assembling cribs and terrible at emotional support. 
+              Postpartum changed that. Now he writes, teaches, and speaks about the partner experience 
+              in the fourth trimester and how dads can lead their families through one of the hardest 
+              seasons of life.
+            </p>
+          </div>
+
+          {/* Sammy */}
+          <div className="bg-[#0a2833] rounded-lg p-8">
+            <h3 className="text-3xl font-bold text-[#E8C5A8] mb-4">Sammy</h3>
+            <p className="text-gray-200 leading-relaxed">
+              Sammy is a mom, wife, and mental health advocate who spent her first postpartum months 
+              thinking she was uniquely broken before realizing postpartum anxiety affects up to 1 in 5 
+              women. Her experience navigating the fourth trimester while managing anxiety, recovering 
+              from birth, and rebuilding her identity taught her that the postpartum journey requires 
+              support for the entire family — not just baby. She writes and teaches about maternal 
+              mental health, partner communication, and creating a postpartum plan that actually works.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   )
 }
