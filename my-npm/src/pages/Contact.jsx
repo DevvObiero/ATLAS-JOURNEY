@@ -38,7 +38,6 @@ export default function Contact() {
             Have questions? Want to share your story? We'd love to hear from you.
           </p>
         </div>
-
         <div className="grid lg:grid-cols-2 gap-8 items-start">
           <div className="bg-[#263940] rounded-2xl p-8 shadow-2xl">
             <div className="flex items-center gap-3 mb-2">
@@ -126,12 +125,12 @@ export default function Contact() {
           <div className="space-y-6">
             <div className="bg-[#0B2732] rounded-2xl p-8 shadow-2xl">
               <div className="flex items-center gap-3 mb-4">
-                <Mail className="w-8 h-8" />
-                <h3 className="text-2xl font-bold">Email Us Directly</h3>
+                <Mail className="w-8 h-8 text-[#D4896E]" />
+                <p className="text-xl font-bold">Email Us Directly</p>
               </div>
               <a 
                 href="mailto:hello@atlasjourney.com"
-                className="text-2xl font-mono hover:underline inline-block"
+                className="text-xl  hover:underline inline-block"
               >
                 hello@atlasjourney.com
               </a>
@@ -161,7 +160,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-[#263940] rounded-2xl p-8 shadow-2xl border-2 border-[#D4896E] border-opacity-30">
+            <div className="bg-[#0B2732] rounded-2xl p-8 shadow-2xl border-1 border-[#D4896E] border-opacity-30">
               <div className="flex items-center gap-3 mb-4">
                 <BookOpen className="w-7 h-7 text-[#D4896E]" />
                 <h3 className="text-2xl font-bold">Looking for Resources?</h3>
