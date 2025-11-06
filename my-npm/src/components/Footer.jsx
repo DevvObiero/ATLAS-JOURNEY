@@ -40,29 +40,7 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* --- COLUMN 3: NEWSLETTER --- */}
-          <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Newsletter</h3>
-            <p className="text-sm">
-              Weekly insights for partners and families navigating postpartum life.
-            </p>
-            <form className="mt-4">
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-[#607165]"
-                />
-                <button
-                  type="submit"
-                  className="px-4 py-2 text-white rounded-r-md hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: '#607165' }} // Your brand button color
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
-          </div>
+       
           
           {/* --- COLUMN 4: CONNECT WITH US --- */}
           <div>
