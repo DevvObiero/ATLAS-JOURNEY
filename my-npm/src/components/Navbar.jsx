@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// 1. Import NavLink instead of Link
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -38,14 +39,28 @@ const Navbar = () => {
       <ul className="flex gap-8 text-sm font-medium">
         {links.map(({ label, path }) => (
           <li key={label}>
-            <Link
+            {/* 2. Use NavLink instead of Link */}
+            <NavLink
               to={path}
               className="relative pb-1 group"
               style={{ color: "#E8C5A8" }}
             >
-              {label}
-              <span className="pointer-events-none absolute left-0 bottom-0 w-full h-[2px] bg-[#E8C5A8] scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
-            </Link>
+              {/* 3. Use a render function for the children */}
+              {({ isActive }) => (
+                <>
+                  {label}
+                  <span
+                    className={`
+                      pointer-events-none absolute left-0 bottom-0 w-full h-[2px] bg-[#E8C5A8] 
+                      transition-transform duration-300 origin-left 
+                      group-hover:scale-x-100
+                      ${/* 4. Conditionally apply scale-x-100 if active */ ''}
+                      ${isActive ? "scale-x-100" : "scale-x-0"}
+                    `}
+                  />
+                </>
+              )}
+            </NavLink>
           </li>
         ))}
       </ul>

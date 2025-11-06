@@ -56,6 +56,14 @@ export default function Resources() {
   return (
     <div className="min-h-screen bg-[#051B24]    text-white">
       {/* Hero Section */}
+            <div
+        className="w-full"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+        }}
+      ></div>
       <div className="bg-gradient-to-b from-[#263940] to-[#051B24] py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl py-10 mt-5 md:text-6xl font-bold mb-6 bg-gradient-to-r from-[#D4896E] to-white bg-clip-text text-transparent">
