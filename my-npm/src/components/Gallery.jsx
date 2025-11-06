@@ -39,40 +39,42 @@ const Gallery = () => {
         </div>
 
         {/* === 2. RIGHT: CARD SWAP === */}
-        {/*
-          - 'md:w-1/2' makes this take up the other half of the width.
-          - The original div with height and position is kept as it's needed for CardSwap.
-        */}
-        <div className="md:w-1/2 w-full" style={{ height: '500px', position: 'relative' }}>
-          <CardSwap
-            cardDistance={90}
-            verticalDistance={70}
-            delay={5000}
-            pauseOnHover={false}
-          >
-            <Card>
-              <img 
-                src="https://images.pexels.com/photos/1741231/pexels-photo-1741231.jpeg" // <-- Remember to change this
-                alt="Couple listening to a podcast" 
-                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }}
-              />
-            </Card>
-            <Card>
-              <img 
-                src="https://babysittingagency.fkfbungoma.co.ke/assets/a-131_1761862132502_1762261801879-CcZj2CEn.jpg" // <-- Remember to change this
-                alt="Father holding a newborn baby" 
-                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }}
-              />
-            </Card>
-            <Card>
-              <img 
-                src="https://babysittingagency.fkfbungoma.co.ke/assets/a-133_1761862132500_1762261801877-FZj1YbnM.jpg" // <-- Remember to change this
-                alt="Two parents smiling" 
-                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }}
-              />
-            </Card>
-          </CardSwap>
-        </div>
+       
+     
+<div 
+  className="md:w-1/2 w-full mx-auto md:mx-0" 
+  style={{ height: '500px', position: 'relative' }}
+>
+  <CardSwap
+    cardDistance={90}
+    verticalDistance={70}
+    delay={5000}
+    pauseOnHover={false}
+  >
+    <Card>
+      <img 
+        src="https://images.pexels.com/photos/1741231/pexels-photo-1741231.jpeg"
+        alt="Couple listening to a podcast" 
+        style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }}
+      />
+    </Card>
+    <Card>
+      <img 
+        src="https://babysittingagency.fkfbungoma.co.ke/assets/a-131_1761862132502_1762261801879-CcZj2CEn.jpg"
+        alt="Father holding a newborn baby"
+        style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }}
+      />
+    </Card>
+    <Card>
+      <img 
+        src="https://babysittingagency.fkfbungoma.co.ke/assets/a-133_1761862132500_1762261801877-FZj1YbnM.jpg"
+        alt="Two parents smiling"
+        style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }}
+      />
+    </Card>
+  </CardSwap>
+</div>
+
       </div>
     </div>
   )

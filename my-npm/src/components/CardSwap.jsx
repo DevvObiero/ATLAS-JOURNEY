@@ -178,7 +178,21 @@ const CardSwap = ({
   return (
     <div
       ref={container}
-      className="absolute bottom-0  right-0 transform translate-x-[5%] translate-y-[20%] origin-bottom-right perspective-[900px] overflow-visible max-[768px]:translate-x-[25%] max-[768px]:translate-y-[25%] max-[768px]:scale-[0.75] max-[480px]:translate-x-[25%] max-[480px]:translate-y-[25%] max-[480px]:scale-[0.55]"
+      className="    absolute bottom-0 right-0 
+    perspective-[900px] overflow-visible 
+    transform
+
+    /* Desktop stays the same */
+    translate-x-[5%] translate-y-[20%]
+
+    /* Mobile: center it */
+    max-md:left-1/2 max-md:bottom-auto max-md:top-1/2 
+    max-md:-translate-x-1/2 max-md:-translate-y-1/2 
+    max-md:right-auto 
+
+    /* Scale to fit */
+    max-md:scale-[0.75] 
+    max-sm:scale-[0.60]"
       style={{ width, height }}
     >
       {rendered}
