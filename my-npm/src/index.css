@@ -23,3 +23,27 @@ background-color: #051A23;
   body {
   overflow-x: hidden;
 }
+
+
+@keyframes blurFadeIn {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  50% {
+    filter: blur(5px);
+    opacity: 0.5;
+    transform: translateY(5px);
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blur-fade-in {
+  display: inline-block;
+  animation: blurFadeIn 3s ease forwards; /* 1s duration, adjust as needed */
+}

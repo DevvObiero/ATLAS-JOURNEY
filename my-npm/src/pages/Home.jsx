@@ -5,11 +5,15 @@ function Home() {
     <section className="min-h-screen  body flex items-center justify-between px-12 py-20" >
       {/* Left Side Text */}
     <div className="max-w-lg space-y-6">
-<h1 className="manrope text-5xl font-bold leading-tight" style={{ color: "#E8C5A8" }}>
+<h1
+  className="manrope text-5xl font-bold leading-tight blur-fade-in"
+  style={{ color: "#E8C5A8" }}
+>
   The Fourth Trimester Doesn't Have to Break You
 </h1>
 
-  <p className="text-gray-400 text-lg">
+
+  <p className="text-gray-400  text-lg">
     Real support for partners navigating postpartum — because no one should feel unprepared.
   </p>
 
