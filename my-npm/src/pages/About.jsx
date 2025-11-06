@@ -107,6 +107,46 @@ const About = () => {
           </div>
         </div>
       </div>
+          <div className="bg-[#263940] min-h-screen flex items-center justify-center p-8">
+      <div className="max-w-6xl w-full grid md:grid-cols-2 gap-8 items-center">
+        {/* Text Content */}
+        <div className="text-white space-y-6">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            From Sammy: The Mom Who Needed More Than "You've Got This"
+          </h2>
+          
+          <div className="space-y-4 text-gray-200">
+            <p>
+              I thought I knew what postpartum would be like. I'm a researcher. I read every book, 
+              followed every expert, and created detailed plans for breastfeeding, sleep schedules, 
+              and recovery.
+            </p>
+            
+            <p>
+              But no one prepared me for the rage. The bone-deep exhaustion that made me feel like 
+              a shell of myself. The anxiety that convinced me something terrible was about to 
+              happen at any moment.
+            </p>
+            
+            <p className="font-semibold text-lg">
+              That's the gap Atlas Journey fills.
+            </p>
+          </div>
+          
+          <button className="text-white underline hover:text-gray-300 transition-colors font-medium">
+            Read More →
+          </button>
+        </div>
+        
+        {/* Image Placeholder */}
+      <img 
+  src="https://babysittingagency.fkfbungoma.co.ke/assets/sammy_optimized-WD1uULLr.jpg" 
+  alt="Sammy's photo" 
+  className="rounded-lg w-full h-1009x object-cover"
+/>
+      </div>
+    </div>
+
     </div>
   )
 }
