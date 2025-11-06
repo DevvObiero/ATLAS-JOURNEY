@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-
+import OurValues from '../components/OurValues';
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-
+  
   return (
     <div className="min-h-screen">
       {/* Our Story Section */}
@@ -214,7 +214,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      <OurValues />
     </div>
   )
 }

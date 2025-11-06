@@ -30,7 +30,7 @@ const Navbar = () => {
       }`}
     >
       {/* Logo */}
-      <div className="text-3xl font-semibold" style={{ color: "#E8C5A8" }}>
+      <div className="text-3xl arisev  font-semibold" style={{ color: "#E8C5A8" }}>
         AJ
       </div>
 
