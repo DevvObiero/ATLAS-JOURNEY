@@ -26,12 +26,16 @@ function Blog() {
 
       <div className="space-y-12 max-w-3xl mx-auto">
         {posts.map(post => (
-          <Link key={post.id} to={`/blog/${post.id}`} className="block group">
+          <Link
+            key={post.id}
+            to={`/blog/${post.id}`}
+            className="block group cursor-pointer transform transition hover:scale-105 h-[100px] hover:shadow-lg"
+          >
             <div className="overflow-hidden rounded-lg border border-[#E8C5A8]">
               {post.imageUrl && (
                 <img
                   src={post.imageUrl}
-                  alt=""
+                  alt={post.title}
                   className="w-full h-64 object-cover group-hover:opacity-90 transition"
                 />
               )}
