@@ -1,6 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "./firebase";
+import BlogPost from "./pages/BlogPost";
+import Login from "./pages/Login";
+import Admin from "./pages/Admin";
+import ProtectedRoute from "./components/ProtectedRoute"; // From earlier step
+
+
+
 
 import ResourcesSection from "./components/ResourcesSection";
 import PostpartumSection from "./components/PostpartumSection";
@@ -21,8 +30,11 @@ import Contact from "./pages/Contact";
 import "./App.css";
 
 export default function App() {
+
+
   return (
     <>
+      <div className="bg-[#051A23]" >
       <Navbar />
 
       <Routes>
@@ -50,9 +62,20 @@ export default function App() {
         <Route path="/Podcast" element={<Podcast />} />
         <Route path="/Resources" element={<Resources />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+<Route path="/blog/:id" element={<BlogPost />} />
+<Route
+  path="/admin"
+  element={
+    <ProtectedRoute>
+      <Admin />
+    </ProtectedRoute>
+  }
+/>
       </Routes>
 
       <Footer />
+      </div>
     </>
   );
 }
